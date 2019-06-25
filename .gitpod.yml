@@ -6,4 +6,5 @@ ports:
     onOpen: open-preview
 tasks:
   - init: pip3 install -r requirements.txt
+    init: sudo apt-get install python3-tk
     command: python3 main.py
