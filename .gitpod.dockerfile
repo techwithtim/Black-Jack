@@ -11,8 +11,5 @@ RUN apt-get update && apt-get install -y \
         libsdl1.2-dev \
         python-pygame \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
-RUN apt-get build-dep pygame
-RUN cd pygame
-RUN python3 config.py
-RUN python3 setup.py build
-RUN sudo python3 setup.py install
+RUN apt-get build-dep python3-pygame
+
