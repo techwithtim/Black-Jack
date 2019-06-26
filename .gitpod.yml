@@ -1,13 +1,11 @@
 image:
     file: .gitpod.dockerfile
-
 ports:
   - port: 5900
     onOpen: ignore
   - port: 6080
     onOpen: open-preview
 tasks:
-  - init: pip install -r requirements.txt
-  - init: pip2 install pygame
-    command: python2 main.py
+    - init: /usr/bin/python3 main.py
+      command: /usr/bin/python3 main.py
 
