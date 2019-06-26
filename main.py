@@ -1,3 +1,4 @@
+import install_requirements
 import casino
 import pygame
 import sys
